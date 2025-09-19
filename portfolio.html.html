@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Abdullah Zubair | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(20,20,20,0.95);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(6px);
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00adb5;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      color: #eee;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #00adb5;
+    }
+
+    section {
+      padding: 80px 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 140px 20px 100px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .hero img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #00adb5;
+      box-shadow: 0 6px 20px rgba(0, 173, 181, 0.4);
+      clip-path: polygon(
+        50% 0%,
+        93% 25%,
+        93% 75%,
+        50% 100%,
+        7% 75%,
+        7% 25%
+      );
+      transition: transform 0.3s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #bbb;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #00adb5;
+      animation: slideUp 1s ease;
+    }
+
+    .skills, .projects, .courses, .experience, .education {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .card h3 {
+      color: #00adb5;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #00adb5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #008891;
+      box-shadow: 0 0 15px rgba(0,173,181,0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #1a1a1a;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #00adb5;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#courses">Courses</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="photo2c.jpg" alt="Profile Photo">
+    <h2>Muhammad Abdullah Zubair</h2>
+    <p>Python & AI/ML Enthusiast | Aspiring Developer</p>
+    <p>📍 Rawalpindi, Pakistan | ✉ muhammadabdullahzubairmalik@gmail.com | 📞 +92-3105167551</p>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">Career Objective</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Motivated Computer Science student who loves to code and shape ideas into reality, with expertise in Python, Data Handling, and Object-Oriented Programming. Seeking an internship/job in Python or AI/ML to apply technical skills, work on real-world projects, and grow as a developer.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education">
+      <div class="card">
+        <h3>BS Computer Science (Ongoing)</h3>
+        <p>National University of Modern Languages (NUML), Islamabad</p>
+      </div>
+      <div class="card">
+        <h3>Intermediate in Computer Science (ICS)</h3>
+        <p>Fauji Foundation College</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <div class="skills">
+      <div class="card"><h3>Programming</h3><p>Python, SQL, OOP, DSA, Visual Programming</p></div>
+      <div class="card"><h3>Libraries & Tools</h3><p>Pandas, NumPy, Selenium</p></div>
+      <div class="card"><h3>Other Skills</h3><p>Web Scraping, Data Annotation, Problem Solving</p></div>
+    </div>
+  </section>
+
+  <section id="courses">
+    <h2 class="section-title">Courses</h2>
+    <div class="courses">
+      <div class="card"><h3>Data Structures & Algorithms</h3><p>Strong foundation in problem-solving and optimization techniques.</p></div>
+      <div class="card"><h3>Object-Oriented Programming</h3><p>Grasp of OOP principles and their applications in real projects.</p></div>
+      <div class="card"><h3>Visual Programming</h3><p>Basics of GUI-based programming concepts and implementations.</p></div>
+      <div class="card"><h3>Database Systems</h3><p>Managing databases, designing schemas, and writing efficient SQL queries.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="card"><h3>CryptoScraperBot</h3><p>Scrapes cryptocurrency data and exports structured datasets.</p></div>
+      <div class="card"><h3>Riddle Game (Python)</h3><p>Game using riddles and clues linked across data sources.</p></div>
+      <div class="card"><h3>Pharmacy Management System (Java)</h3><p>GUI-based pharmacy management app.</p></div>
+      <div class="card"><h3>Mini Python Scripts</h3><p>Map, automation tools, background remover, etc.</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Data Annotation & QA Testing</h3>
+        <p>Prepared datasets for call center AI bots.<br>Performed testing, validation, and structure checking.</p>
+      </div>
+      <div class="card">
+        <h3>Web Scraping</h3>
+        <p>Collected sector-specific public data using Python & Selenium.<br>Processed and organized results into CSV for structured use.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p style="text-align:center;">Email: <a href="mailto:muhammadabdullahzubairmalik@gmail.com">muhammadabdullahzubairmalik@gmail.com</a></p>
+    <p style="text-align:center;">GitHub: <a href="https://github.com/abdullahhoonmain">github.com/abdullahhoonmain/</a></p>
+    <p style="text-align:center;">LinkedIn: <a href="https://www.linkedin.com/in/abdullahhoonmain/">www.linkedin.com/in/abdullahhoonmain</a></p>
+  </section>
+
+  <footer>
+    <p>Made with Love. Open source on <a href="https://github.com/abdullahhoonmain/hire-me-please">GitHub</a>.</p>
+    <p>&copy; 2025 Muhammad Abdullah Zubair</p>
+  </footer>
+</body>
+</html>
